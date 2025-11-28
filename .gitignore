@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+
+# Swift Package Manager
+/.build
+/Packages
+.swiftpm/configuration/registries.json
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.netrc
+
+# Xcode
+xcuserdata/
+DerivedData/
+*.xcodeproj
+*.xcworkspace
+
+# VSCode
+.vscode/
+
+# Claude Code
+.claude/
+
+# Sourcery Generated Files
+Sources/Generated/
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~

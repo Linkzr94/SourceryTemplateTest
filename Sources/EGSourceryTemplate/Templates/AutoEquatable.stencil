@@ -1,0 +1,14 @@
+// Generated using Sourcery
+// DO NOT EDIT
+
+{% for type in types.all where type|annotated:"AutoEquatable" %}
+// MARK: - {{ type.name }} AutoEquatable
+extension {{ type.name }}: Equatable {
+    static func == (lhs: {{ type.name }}, rhs: {{ type.name }}) -> Bool {
+        {% for variable in type.storedVariables %}
+        guard lhs.{{ variable.name }} == rhs.{{ variable.name }} else { return false }
+        {% endfor %}
+        return true
+    }
+}
+{% endfor %}
