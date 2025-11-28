@@ -1,6 +1,4 @@
 sources:
     - Sources/EGSourceryTemplate/Models/
-templates:
-    - Sources/EGSourceryTemplate/Templates/
 output:
     Sources/Generated
